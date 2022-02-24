@@ -1,0 +1,33 @@
+// Problem understanding //
+
+In my opinion, one of the most important things that should be taken into account during
+the process of designing a class architechture is future proof scalability. 
+In order to have it, the codebase should be easily extendable and reusable. 
+The class shouldn't contain hardcoded handlers of the data that may be changed/extended in future.
+
+In case of Visma Identity URI handling class, the developer should consider the fact that
+the list of possible actions (currently it's 'login', 'confirm', 'sign') and required parameters
+for them may be changed in future. So, this part of code should be written in a scalable way.
+In addition, during the process of class instance creation we are required to validate a lot of data
+and perhaps it's a good idea to make these validators reusable to use them in future.
+
+
+// Selected programming language //
+
+For this task I decided to use native JS, just because it's the language that I can use
+in the most efficent way. I understand that there are better options for OOP (Python, C++, PHP),
+but I'm not so familiar with them. 
+In addition, after the coming of ES6, JavaScript is able to handle real classes, so I can even say that
+it's not the worst option for OOP.
+Also, considering the fact that the number of application built with JS-frameworks grows in number
+it would be easy to implement the class into them.
+
+
+// Things to improove //
+
+Perhaps it would be nice to use TypeScript for this task, because we are required to validate data with
+some specific types (UUID), but I'm not that good with TS for now.
+So, I guess that it's still possible to handle all the types using vanilla JS and it will be possible to do that 
+in future without any problems. (but TS would make developers' life a bit easier). 
+
+
